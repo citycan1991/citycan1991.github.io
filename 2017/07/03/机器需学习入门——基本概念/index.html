@@ -3,19 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>开始写博客吧～ | 陈可安</title>
+  <title>机器学习入门——基本概念 | 陈可安</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="坚持写作，坚持思考">
-<meta name="keywords" content="随笔">
+  <meta name="description" content="本文介绍了机器学习的基础概念">
+<meta name="keywords" content="机器学习">
 <meta property="og:type" content="article">
-<meta property="og:title" content="开始写博客吧～">
-<meta property="og:url" content="http://yoursite.com/2017/04/22/开始写博客吧～/index.html">
+<meta property="og:title" content="机器学习入门——基本概念">
+<meta property="og:url" content="http://yoursite.com/2017/07/03/机器需学习入门——基本概念/index.html">
 <meta property="og:site_name" content="陈可安">
-<meta property="og:description" content="坚持写作，坚持思考">
-<meta property="og:updated_time" content="2017-04-22T14:12:05.350Z">
+<meta property="og:description" content="本文介绍了机器学习的基础概念">
+<meta property="og:image" content="http://yoursite.com/2017/07/03/机器需学习入门——基本概念/ML.jpg">
+<meta property="og:updated_time" content="2017-07-07T15:39:54.914Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="开始写博客吧～">
-<meta name="twitter:description" content="坚持写作，坚持思考">
+<meta name="twitter:title" content="机器学习入门——基本概念">
+<meta name="twitter:description" content="本文介绍了机器学习的基础概念">
+<meta name="twitter:image" content="http://yoursite.com/2017/07/03/机器需学习入门——基本概念/ML.jpg">
   
     <link rel="alternative" href="/atom.xml" title="陈可安" type="application/atom+xml">
   
@@ -205,11 +207,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-开始写博客吧～" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-机器需学习入门——基本概念" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/04/22/开始写博客吧～/" class="article-date">
-      <time datetime="2017-04-22T13:12:17.000Z" itemprop="datePublished">2017-04-22</time>
+      <a href="/2017/07/03/机器需学习入门——基本概念/" class="article-date">
+      <time datetime="2017-07-03T13:15:39.000Z" itemprop="datePublished">2017-07-03</time>
 </a>
     </div>
   
@@ -222,7 +224,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      开始写博客吧～
+      机器学习入门——基本概念
     </h1>
   
 
@@ -233,7 +235,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/机器学习/">机器学习</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -243,33 +245,60 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>花了几个工作日的晚上，终于把博客搭建好了，github+Hexo确实很方便（不得不说Hexo的主题真的很好看），可惜工作写markdown太少，写得还不是很溜，边写边熟悉吧。</p>
-<h2 id="为什么开始写博客"><a href="#为什么开始写博客" class="headerlink" title="为什么开始写博客"></a>为什么开始写博客</h2><ul>
-<li><big>督促自己看书和思考</big><br>转眼一晃上班都快三年了，猛然一回想，这三年的空闲时间几乎都肆意挥霍了，没有培养一个爱好，也没有多看几本书。所以想以写博客的方式，让自己空闲的时候能多看点书，多些思考和总结，记录在这里。</li>
+        <p>最近在看一些机器学习相关的资料，发现机器学习这门学科对于入门者来说其实并不友好。首先，机器学习作为一门横跨计算机学、统计学、概率论等的多领域交叉学科，不仅要理解很多概念和专业名词，还需要非常扎实的数学基础，其次还需要很多计算机中的算法基础。</p>
+<p>所以，我们先从最基本的概念谈起。</p>
+<h2 id="什么是机器学习？"><a href="#什么是机器学习？" class="headerlink" title="什么是机器学习？"></a>什么是机器学习？</h2><p>回答这个问题之前，我们可以先回忆一下，人类是怎么学习的。人类除了从书籍、报纸、网络等媒介直接获取知识外，还有一种通过不断的自我总结来学习的方式。对于很多我们无法从搜索引擎中搜索到标准答案的问题，往往后一种方式更加有效。比如，你有一个朋友A，当我问你A这个月会不会请你吃饭的时候，你会在大脑里面回忆，A以前请过我吃饭吗，上次请我吃饭是什么时候等等一系列问题。最终，你会根据以往的<em>经历</em>总结出<em>经验</em>，如果A长期以往的坚持每个月请你吃饭，那他这个月也一定会请你吃饭。如果A从来没有请你吃过饭，那可能你这个月需要找你另外的朋友蹭饭了。</p>
+<blockquote>
+<p>“A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E”</p>
+</blockquote>
+<p>以上是引用维基百科中对机器学习的定义。简单的来说，与人类通过各种各样过往的经历总结出经验来帮助自己对未来进行分析一样，<strong>机器学习就是计算机利用已有的数据，得出了某种模型，并利用此模型预测未知数据的一种方法</strong>。</p>
+<h2 id="机器学习与人工智能"><a href="#机器学习与人工智能" class="headerlink" title="机器学习与人工智能"></a>机器学习与人工智能</h2><p>可能你经常会有这样的感受，为什么说到人工智能总会扯到机器学习，谈起机器学习也经常扯上人工智能。二者有何关联呢？要让计算机像“人”一样，我们先回想一下人类有具有的一些能力：记忆力、计算能力、搜索能力能力、学习能力等等。在科技发达的今天，计算机拥有强大的数据存储能力，有云计算提供的高性能计算能力、有搜索引擎提供的快速准确的搜索能力，而机器学习就是计算机迈向“人工智能”最为关键的一步，计算机的自学习能力。如果说“人工智能”是目标的话，机器学习就是方法，让计算机变得“智慧”的方法。</p>
+<h2 id="机器学习与深度学习"><a href="#机器学习与深度学习" class="headerlink" title="机器学习与深度学习"></a>机器学习与深度学习</h2><p>在没有接触机器学习之前，我也纳闷过，到底机器学习是啥，深度学习又是啥，我应该学机器学习还是深度学习。后来经过学习发现，其实深度学习只是机器学习中的一个方向。深度学习源自于很早之前就有的神经网络算法，本来一直很低调，因为机器学习的出现变得大红大紫。简单的讲，神经网络是指模拟神经元分层处理的一种算法，传统的神经网络算法在多隐层场景下其性能堪忧，但机器学习的出现，改善了多隐层的问题，从而产生了深度神经网络，即我们说的深度学习。</p>
+<h2 id="机器学习的分类"><a href="#机器学习的分类" class="headerlink" title="机器学习的分类"></a>机器学习的分类</h2><p><img src="/2017/07/03/机器需学习入门——基本概念/ML.jpg" alt="机器学习分类"><br>按照学习方法的不同，可以粗略的划分为两类：</p>
+<ul>
+<li><strong>监督学习</strong>：可以简单的理解为通过对已知数据进行模型训练，然后来预测未知数据的学习方法。这类学习方法主要用于处理分类、回归等问题。</li>
+<li><strong>无监督学习</strong>：直接通过现有的数据进行建模，挖掘其内在的联系，注重的是对已知数据的分析。无监督学习常常用于聚类、降维等。</li>
+</ul>
+<p>上面提到了几个概念：<strong>分类、回归、聚类、降维</strong>。那么这几个概念到底是什么意思呢？</p>
+<ul>
+<li><strong>分类</strong>：这里分类的含义与字面意思差不多，主要是指机器学习中对离散型数据的一种处理方法，输出主常常为是/否这样的定性值。例如，我知道了世界上所有已知动物的外观、习性、品种等众多关键性的特征，那么对于一个新的未知物种，就可以通过这些特征数据得出它的科属。常用的分类器有朴素贝叶斯、决策树、kNN等。</li>
 </ul>
 <ul>
-<li><big>鼓捣一些有意思的玩意儿</big><br>如果只是因为上面一个原因的话，我可能就直接在cnblogs这些网站上写了，但是这样太没意思了，不是么。所以把闲置的笔记本翻出来，擦擦灰，装个Ubuntu，用github Pages+Hexo搭建，用markdown像写代码一样写博客，很Geek，呵呵。</li>
-</ul>
-<h2 id="博客会更新什么内容"><a href="#博客会更新什么内容" class="headerlink" title="博客会更新什么内容"></a>博客会更新什么内容</h2><ul>
-<li><big>读书笔记</big><br>想把自己以后读书的读后感记录在这里，技术类的也好，非技术类的也好。总之，就是多读多写。</li>
+<li><strong>回归</strong>：和上面分类相对，回归主要是处理连续性数据，输出的结果一般为数值，而不是分类中的阿猫、阿狗这样的类型值。例如根据某地区历年的降雨数据，通过回归模型，预测出今年的该地区的降雨量。其实分类中的一些算法模型也可以用于回归中。</li>
 </ul>
 <ul>
-<li><big>ACM/ICPC解题报告及一些乱七八糟的代码</big><br>如果后面有时间和兴趣做点ACM题的话，会把解题报告放在这里。代码的话，考虑尽量放在github，如果有些有意思的代码也会放在这里。</li>
+<li><strong>聚类</strong>：俗话说“物以类聚，人以群分”。那么聚类就是对海量的数据进行分类。聚类属于无监督学习的范畴，即不需要训练数据，通过特征值直接将已知数据切割为几类，或者给出每条数据属于某个类的概率。K-means就是典型的聚类算法。聚类也常常用于商品推荐等场景。</li>
 </ul>
 <ul>
-<li><big>杂文/随想/瞎扯淡…</big><br>毕竟曾经QQ空间大文豪，毕业删掉所有日志之后，再没一个蛋疼菊紧的时候乱七八糟写东西的地儿了。放在这人挺好，没人围观。只做记录，不刷存在感。</li>
+<li><strong>降维</strong>：同样属于无监督学习的还有降维。我们知道，数据的维度越多，用于机器学习的样本量也就越大。那么降维就是去除无用噪声，进行特征选择或者特征提取。降维可以通过主要成分分析(PCA)等算法实现。</li>
 </ul>
-<h2 id="博客不会更新什么内容"><a href="#博客不会更新什么内容" class="headerlink" title="博客不会更新什么内容"></a>博客不会更新什么内容</h2><ul>
-<li><big>除上面的内容都不会更新在这里</big>
-
-
-
-
-
+<h2 id="机器学习处理数据的简单步骤"><a href="#机器学习处理数据的简单步骤" class="headerlink" title="机器学习处理数据的简单步骤"></a>机器学习处理数据的简单步骤</h2><p>实际项目中可能机器学习是一个非常浩大的流水线工作，需要非常多的步骤，这里简单的介绍一下最基本的流程：</p>
+<ul>
+<li>数据预处理：预处理的方式方法多种多样，具体需要哪些步骤要看实际的数据。常用的步骤有：数据清洗/数据变换/噪声数据处理/特征降维等。</li>
+</ul>
+<ul>
+<li><p>模型选择：根据现有数据及处理目的，选择合适的模型，通常模型选择不是唯一的，可以多选择几个模型进行数据训练</p>
+</li>
+<li><p>数据拆分：将现有数据按照一定比例（例如80:20/75:25）拆分为训练数据和测试数据。当然，这个步骤不是必须的，如果你有另外的测试数据的话。</p>
 </li>
 </ul>
-<p>发现确实好久没有写文字，语言竟然有些乏力。给自己挖了这么大个坑儿，希望自己能慢慢填上吧。如果这个博客写废了以后岂不是很丢脸哈哈。</p>
-<p>坚持写作，坚持思考，嗯。</p>
+<ul>
+<li>数据训练：用现有的数据，对模型进行训练。</li>
+</ul>
+<ul>
+<li>模型优化：这个步骤应该是最痛苦的，对当前的模型进行调参啊各种玄学操作，提高模型的性能、准确率等</li>
+</ul>
+<h2 id="机器学习的一些学习感受"><a href="#机器学习的一些学习感受" class="headerlink" title="机器学习的一些学习感受"></a>机器学习的一些学习感受</h2><p>其实我自己也是初学者，谈不上总结什么经验教训。初识机器学习，兴趣盎然，但是一段时间之后，就充斥着复杂的数学公式、深奥的算法。所以，我最直观的感受就是，要想清楚自己的学习目的。</p>
+<ul>
+<li>如果你是和我一样，对新技术感兴趣，想看一看，学一学，那你可以走马观花，不必拘泥于一个数学公式的推导或者一个算法解释，跳出来从整体看全貌。你会发现，哇，机器学习还是挺有意思的，甚至对我们的未来产生了美好的憧憬。</li>
+</ul>
+<ul>
+<li>如果是应用为目的的话，其实现在各种机器学习的包啊库啊已经非常完善了，那么需要具备理论基础的前提下快速上手，提高对各种库的熟练度。我认为应用最难的地方在于对模型的选择（毕竟没有最好的模型，只有最合适的模型），还有对模型的优化（各种玄学调参23333）。这两个点，都是直接影响最后数据的准确性。</li>
+</ul>
+<ul>
+<li>如果你是以研究为目的的话，对不起，我帮不上你。菜鸟并没有办法为大神指路。</li>
+</ul>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>本文是基于前段时间自己学习的总结写出来的，断断续续的写了几个晚上，所有文字均为鄙人片面的一点理解，难免有偏差。如存在错误或者问题，恳请指正，我也能及时纠正我错误的理解。</p>
 
       
       
@@ -279,13 +308,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2017/04/22/开始写博客吧～/">开始写博客吧～</a></p>
+        <p><span>本文标题:</span><a href="/2017/07/03/机器需学习入门——基本概念/">机器学习入门——基本概念</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 陈可安 的个人博客">陈可安</a></p>
-        <p><span>发布时间:</span>2017年04月22日 - 21时12分</p>
-        <p><span>最后更新:</span>2017年04月22日 - 22时12分</p>
+        <p><span>发布时间:</span>2017年07月03日 - 21时15分</p>
+        <p><span>最后更新:</span>2017年07月07日 - 23时39分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2017/04/22/开始写博客吧～/" title="开始写博客吧～">http://yoursite.com/2017/04/22/开始写博客吧～/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/04/22/开始写博客吧～/　　作者: 陈可安" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2017/07/03/机器需学习入门——基本概念/" title="机器学习入门——基本概念">http://yoursite.com/2017/07/03/机器需学习入门——基本概念/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/07/03/机器需学习入门——基本概念/　　作者: 陈可安" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -298,11 +327,15 @@
 
 <nav id="article-nav">
   
-  
-    <a href="/2017/06/06/学会提问-读书笔记/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">&lt;学会提问&gt;读书笔记</div>
-      <strong class="article-nav-caption">></strong>
+    <a href="/2017/06/07/leetcode解题报告-Two-Sum/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          &lt;leetcode解题报告&gt;Two Sum
+        
+      </div>
     </a>
+  
   
 </nav>
 
@@ -311,7 +344,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#为什么开始写博客"><span class="toc-number">1.</span> <span class="toc-text">为什么开始写博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#博客会更新什么内容"><span class="toc-number">2.</span> <span class="toc-text">博客会更新什么内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#博客不会更新什么内容"><span class="toc-number">3.</span> <span class="toc-text">博客不会更新什么内容</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是机器学习？"><span class="toc-number">1.</span> <span class="toc-text">什么是机器学习？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#机器学习与人工智能"><span class="toc-number">2.</span> <span class="toc-text">机器学习与人工智能</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#机器学习与深度学习"><span class="toc-number">3.</span> <span class="toc-text">机器学习与深度学习</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#机器学习的分类"><span class="toc-number">4.</span> <span class="toc-text">机器学习的分类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#机器学习处理数据的简单步骤"><span class="toc-number">5.</span> <span class="toc-text">机器学习处理数据的简单步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#机器学习的一些学习感受"><span class="toc-number">6.</span> <span class="toc-text">机器学习的一些学习感受</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#最后"><span class="toc-number">7.</span> <span class="toc-text">最后</span></a></li></ol>
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -368,13 +401,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2017/06/07/leetcode解题报告-Two-Sum/" title="上一篇: &lt;leetcode解题报告&gt;Two Sum">
+                <i class="fa fa-angle-left"></i>
+            </a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2017/06/06/学会提问-读书笔记/" title="下一篇: &lt;学会提问&gt;读书笔记">
-                <i class="fa fa-angle-right"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
     </div>
     <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/07/03/机器需学习入门——基本概念/">机器学习入门——基本概念</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/07/leetcode解题报告-Two-Sum/"><leetcode解题报告>Two Sum</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/06/学会提问-读书笔记/"><学会提问>读书笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/22/开始写博客吧～/">开始写博客吧～</a></li></ul>
